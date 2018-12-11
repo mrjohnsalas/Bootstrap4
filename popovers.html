@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Popovers</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+         <div class="col mt-5">
+             <h2>Popovers</h2>
+             <hr>
+             <button class="btn btn-primary" data-container="body" data-placement="top" data-toggle="popover" title="Titulo del popover" data-content="esto es una prueba de popover">Arriba</button>
+             <button class="btn btn-primary" data-container="body" data-placement="left" data-toggle="popover" title="Titulo del popover" data-content="esto es una prueba de popover">Izquierda</button>
+             <button class="btn btn-primary" data-container="body" data-placement="right" data-toggle="popover" title="Titulo del popover" data-content="esto es una prueba de popover">Derecha</button>
+             <button class="btn btn-primary" data-container="body" data-placement="bottom" data-toggle="popover" title="Titulo del popover" data-content="esto es una prueba de popover">Abajo</button>
+         </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(function(){
+            $('[data-toggle="popover"]').popover();
+        })
+    </script>
+</body>
+</html>

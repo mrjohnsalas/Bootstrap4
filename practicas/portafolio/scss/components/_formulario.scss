@@ -1,0 +1,32 @@
+.formulario {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        padding: 15px;
+        border: none;
+        width: 100%;
+        font-family: $font-family;
+        margin-bottom: 30px;
+    }
+
+    textarea {
+        height: 150px;
+        min-height: 150px;
+        max-height: 250px;
+    }
+
+    .boton {
+        background: $c-6;
+        border: none;
+        padding: 7px 30px;
+        color: $c-1;
+        font-family: $font-family;
+        cursor: pointer;
+        width: auto;
+        border-radius: 3px;
+        
+        &:hover {
+            background: $c-7;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.portafolio {
+    background: $c-1;
+    border-top: 5px solid $c-6;
+    padding: 0 20px;
+
+    .titulo {
+        padding: 40px 0;
+        text-align: center;
+        color: $c-6;
+        font-family: $font-family;
+        font-weight: 300;
+    }
+
+    .galeria {
+        .contenedor-imagen {
+            margin-bottom: 40px;
+            max-height: 180px;
+            overflow: hidden;
+
+            a {
+                background: $c-6;
+                display: inline-block;
+            }
+
+            &:hover img {
+                opacity: 0.3;
+            }
+        }
+    }
+
+    .modal-dialog {
+        margin: 0px auto;
+        height: 100%;
+        max-width: 1000px;
+    }
+
+    .modal-content {
+        width: auto;
+    }
+}

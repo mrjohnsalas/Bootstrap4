@@ -1,0 +1,52 @@
+.acerca-de {
+    padding: 30px;
+    margin-bottom: 40px;
+
+    .foto {
+        text-align: center;
+
+        img {
+            margin-bottom: 30px;
+        }
+
+        .nombre {
+            color: $c-5;
+            font-weight: 300;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .info {
+        .titulo {
+            color: $c-10;
+            font-family: $font-family;
+            font-weight: 300;
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .resumen {
+            letter-spacing: 1px;
+        }
+
+        .label {
+            font-size: 18px;
+            font-weight: 600;
+            color: $c-10;
+            margin-bottom: 10px;
+        }
+
+        .progress {
+            background: $c-10;
+            border-radius: 0;
+            margin-bottom: 15px;
+            height: 25px; 
+
+            .progress-bar {
+                background: $c-6;
+                line-height: 25px;
+            }
+        }
+    }
+}

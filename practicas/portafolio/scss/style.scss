@@ -1,0 +1,92 @@
+$font-family: 'Open Sans', sans-serif;
+$c-1: #fff;
+$c-2: #cbcbcb;
+$c-3: #bfbfbf;
+$c-4: #777777;
+$c-5: #545454;
+$c-6: #3da5e2;
+$c-7: #1ba0ef;
+$c-8: #1da1f2;
+$c-9: #3b5998;
+$c-10: #005385;
+$c-11: #00426a;
+$c-12: #003855;
+$c-13: #002d44;
+$c-14: #833ab4;
+
+body {
+    background: #f2f2f2;
+    font-family: $font-family;
+}
+
+@import 'components/header';
+@import 'components/slider';
+@import 'components/portafolio';
+@import 'components/acerca-de';
+@import 'components/contacto';
+@import 'components/formulario';
+@import 'components/redes-sociales';
+
+/* Media Queries */
+
+/* Dispositivo lg */
+@media screen and (max-width:991px) {
+    .logo {
+        height: 76px;
+    }
+
+    .menu {
+        min-height: 76px;
+        a {
+            width: 100%;
+            div {
+                width: 100%;
+            }
+        }
+    }
+
+    .portafolio .galeria .contenedor-imagen {
+        &:nth-child(1) {
+            order: 1;
+        }
+        &:nth-child(2) {
+            order: 3;
+        }
+        &:nth-child(3) {
+            order: 6;
+        }
+        &:nth-child(4) {
+            order: 2;
+        }
+        &:nth-child(5) {
+            order: 5;
+        }
+        &:nth-child(6) {
+            order: 4;
+        }
+        &:nth-child(7) {
+            order: 7;
+        }
+    }
+
+    .modal {
+        .modal-dialog {
+            width: 90%;
+            .modal-content img {
+                width: 100%;
+            }
+        }
+    }
+}
+
+/* Dispositivo sm */
+@media screen and (max-width:575px) {
+    header {
+        margin-top: 0;
+        .logo {
+            h2, p {
+                font-size: 12px;
+            }
+        }
+    }
+}

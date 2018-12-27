@@ -1,0 +1,25 @@
+.redes-sociales {
+    padding: 40px 0;
+    margin-bottom: 40px;
+
+    .icono {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+        line-height: 100px;
+        color: $c-1;
+        text-align: center;
+        background: $c-2;
+        display: inline-block;
+        margin: 0px 20px;
+        text-decoration: none;
+        border-radius: 100px;
+        transition: all 0.3s ease;
+    }
+
+    .twitter { background: $c-8; }
+
+    .instagram { background: $c-14; }
+
+    .facebook { background: $c-9; }
+}

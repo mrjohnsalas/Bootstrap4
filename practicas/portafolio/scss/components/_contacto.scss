@@ -1,0 +1,19 @@
+.contacto { 
+    padding: 40px 0;
+    border-top: 1px solid $c-2;
+    border-bottom: 1px solid $c-2;
+    margin-bottom: 40px;
+
+    .titulo {
+        color: $c-12;
+        font-family: $font-family;
+        font-weight: 300;
+        font-size: 40px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .form-group {
+        margin-bottom: 0;
+    }
+}

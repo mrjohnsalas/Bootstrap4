@@ -1,0 +1,27 @@
+$font-family-1: 'Open Sans', sans-serif;
+$font-family-2: 'Roboto', sans-serif;
+
+/* Colors */
+$c-1: #f2f2f2;
+$c-2: #262a34;
+$c-3: #fff;
+$c-4: #0275db;
+$c-5: #35ae6b;
+$c-6: #0275d8;
+$c-7: #025aa5;
+$c-8: #e3e3e3;
+$c-9: #a8a8a8;
+$c-10: #dfdfdf;
+$c-11: #b74848;
+$c-12: #acacac;
+$c-13: #449d44;
+$c-14: #c9302c;
+
+body {
+    background: $c-1;
+    font-size: 16px;
+    font-family: $font-family-1;
+}
+
+@import 'components/barra-lateral';
+@import 'components/main';

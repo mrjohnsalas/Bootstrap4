@@ -1,0 +1,151 @@
+.main {
+    padding-top: 40px;
+    .columna {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .titulo {
+        color: $c-2;
+        font-size: 25px;
+        font-weight: 500;
+        font-family: $font-family-2;
+        margin-bottom: 20px;
+    }
+    .widget {
+        margin-bottom: 40px;
+    }
+    /* Nueva entrada */
+    .nueva-entrada {
+        form {
+            input[type="text"], textarea {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 20px;
+                font-family: $font-family-1;
+                border: none;
+                box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+            }
+            input[type="text"] {
+                font-weight: 400;
+            }
+            textarea {
+                height: 400px;
+                min-height: 200px;
+                max-width: 100%;
+                min-width: 100%;
+            }
+            button {
+                background: $c-6;
+                cursor: pointer;
+                color: $c-3;
+                font-family: $font-family-2;
+                font-size: 18px;
+                font-weight: 500;
+                border: none;
+                display: inline-block;
+                padding: 10px;
+                width: 200px;
+                border-radius: 3px;
+                transition: all 0.3s ease;
+                &:hover {
+                    background: $c-7;
+                }
+            }
+        }
+    }
+    /* Estadistica */
+    .estadisticas {
+        .contenedor {
+            box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.2);
+        }
+        .caja {
+            background: $c-3;
+            border: 1px solid $c-8;
+            padding: 40px 20px;
+            flex: 1;
+            text-align: center;
+            font-family: $font-family-2;
+            h3 {
+                margin-bottom: 10px;
+                color: $c-5;
+            }
+            p {
+                color: $c-9;
+                margin-bottom: 0;
+            }
+            &:first-child {
+                border-right: none;
+            }
+            &:last-child {
+                border-left: none;
+            }
+        }
+    }
+    /* Comentarios */
+    .comentarios {
+        .contenedor {
+            box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.2);
+        }
+        .comentario {
+            background: $c-3;
+            padding: 20px;
+            border-bottom: 1px solid $c-10;
+            .foto {
+                width: 64px;
+                height: 64px;
+                overflow: hidden;
+                margin-right: 20px;
+                border-radius: 100px;
+                a {
+                    display: inline-block;
+                }
+                img {
+                    width: 100%;
+                }
+            }
+            .texto {
+                flex: 1;
+                .texto-comentario {
+                    font-size: 14px;
+                    font-family: $font-family-1;
+                }
+            }
+            .botones {
+                button {
+                    background: none;
+                    cursor: pointer;
+                    color: $c-3;
+                    font-family: $font-family-2;
+                    font-size: 14px;
+                    font-weight: 500;
+                    border: none;
+                    display: inline-block;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    transition: all 0.3s ease;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                }
+                .aprobar {
+                    background: $c-5;
+                    &:hover {
+                        background: $c-13;
+                    }
+                }
+                .eliminar {
+                    background: $c-11;
+                    &:hover {
+                        background: $c-14;
+                    }
+                }
+                .bloquear {
+                    color: $c-12;
+                    &:hover {
+                        background: $c-12;
+                        color: $c-3;
+                    }
+                }
+            }
+        }
+    }
+}

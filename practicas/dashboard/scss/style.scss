@@ -25,3 +25,45 @@ body {
 
 @import 'components/barra-lateral';
 @import 'components/main';
+
+@media screen and (max-width: 1300px) {
+    .barra-lateral {
+        min-width: auto;
+        .logo {
+            display: none;
+        }
+        .menu a {
+            span {
+                display: none;
+            }
+            i {
+                margin: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .barra-lateral {
+        min-height: auto;
+        .menu a {
+            display: inline-block;
+            border-bottom: none;
+        }
+    }
+    .main .nueva-entrada form button {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .main .comentarios .comentario {
+        .foto {
+            width: 30px;
+            height: 30px;
+        }
+        .botones button {
+            width: 100%;
+        }
+    }
+}

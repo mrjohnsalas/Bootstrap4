@@ -1,25 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <title>Modal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <title>Modal</title>
 </head>
+
 <body>
-    <div class="container">
-        <div class="row mt-3">
-            <div class="col">
-<button class="btn btn-primary">Abrir Modal</button>
-<div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal">
-<h1>Hola</h1>
-</div>
+  <div class="container">
+    <div class="row mt-3">
+      <div class="col">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#fm-modal">Abrir Modal</button>
+        <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Titulo de la ventana</h5>
+                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                  <h2>Hola mundo</h2>
+                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt, explicabo.</p>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+
+        <button class="btn btn-primary" data-toggle="modal" data-target="#fm-modal-grid">Abrir Modal con Grid</button>
+        <div class="modal fade" id="fm-modal" tabindex="-1" role="dialog" aria-labelledby="fm-modal" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Grid</h5>
+                <button class="close" data-dismiss="modal" aria-label="Cerrar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <div class="modal-body">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem culpa, 
+                        beatae voluptates praesentium cum deleniti tempore eveniet cupiditate fugit expedita laborum necessitatibus veniam. 
+                        Asperiores esse totam a deleniti et!</p>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quidem culpa, 
+                        beatae voluptates praesentium cum deleniti tempore eveniet cupiditate fugit expedita laborum necessitatibus veniam. 
+                        Asperiores esse totam a deleniti et!</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+                <div class="modal-footer">
+                  <button class="btn btn-success">Aceptar</button>
+                  <button class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+  </div>
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
 </body>
+
 </html>

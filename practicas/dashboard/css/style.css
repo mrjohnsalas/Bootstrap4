@@ -147,3 +147,29 @@ body {
       .main .comentarios .comentario .botones .bloquear:hover {
         background: #acacac;
         color: #fff; }
+
+@media screen and (max-width: 1300px) {
+  .barra-lateral {
+    min-width: auto; }
+    .barra-lateral .logo {
+      display: none; }
+    .barra-lateral .menu a span {
+      display: none; }
+    .barra-lateral .menu a i {
+      margin: 0; } }
+
+@media screen and (max-width: 575px) {
+  .barra-lateral {
+    min-height: auto; }
+    .barra-lateral .menu a {
+      display: inline-block;
+      border-bottom: none; }
+  .main .nueva-entrada form button {
+    width: 100%; } }
+
+@media screen and (max-width: 320px) {
+  .main .comentarios .comentario .foto {
+    width: 30px;
+    height: 30px; }
+  .main .comentarios .comentario .botones button {
+    width: 100%; } }

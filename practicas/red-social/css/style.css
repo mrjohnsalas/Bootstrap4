@@ -1,0 +1,78 @@
+body {
+  background: #e9ebee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px; }
+
+a {
+  color: #1176b6; }
+  a:hover {
+    text-decoration: underline; }
+
+main {
+  padding-top: 20px; }
+
+header {
+  background: #1176b6;
+  padding: 10px 0; }
+  header .logo img {
+    height: 22px; }
+  header .buscar form input[type="text"] {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 12px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 3px 0 0 3px;
+    color: #6d6d6d;
+    font-family: "Open Sans", sans-serif; }
+  header .buscar form button {
+    width: 100%;
+    background: #fff;
+    border: none;
+    font-size: 12px;
+    padding: 0 10px;
+    height: 25px;
+    line-height: 25px;
+    border-radius: 0 3px 3px 0;
+    cursor: pointer;
+    color: #6d6d6d; }
+    header .buscar form button:hover {
+      background: #099efc;
+      color: #fff; }
+  header .menu {
+    padding: 0; }
+    header .menu a {
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none; }
+      header .menu a:hover {
+        color: #fff; }
+    header .menu .imagen {
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      overflow: hidden; }
+      header .menu .imagen img {
+        border-radius: 100px; }
+
+main .bli {
+  padding-bottom: 10px;
+  padding-left: 0px; }
+  main .bli nav {
+    border-bottom: 1px solid #c7c8ca;
+    padding-bottom: 20px; }
+    main .bli nav a {
+      display: block;
+      padding: 3px;
+      font-family: "Roboto", sans-serif;
+      color: #3d3d3d; }
+      main .bli nav a:hover {
+        background: #f2f2f2;
+        text-decoration: none; }
+      main .bli nav a i {
+        margin-right: 10px; }
+
+@media screen and (max-width: 575px) {
+  header .menu {
+    padding: 15px 15px 0 15px; } }

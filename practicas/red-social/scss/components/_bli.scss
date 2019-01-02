@@ -1,0 +1,23 @@
+main {
+    .bli {
+        padding-bottom: 10px;
+        padding-left: 0px;
+        nav {
+            border-bottom: 1px solid $c-6;
+            padding-bottom: 20px;
+            a {
+                display: block;
+                padding: 3px;
+                font-family: $font-family-2;
+                color: $c-7;
+                &:hover {
+                    background: $c-8;
+                    text-decoration: none;
+                }
+                i {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}

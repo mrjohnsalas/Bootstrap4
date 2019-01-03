@@ -9,6 +9,15 @@ $c-5: #099efc;
 $c-6: #c7c8ca;
 $c-7: #3d3d3d;
 $c-8: #f2f2f2;
+$c-9: #565656;
+$c-10: #8d8d8d;
+$c-11: #00609c;
+$c-12: #1a87cd;
+$c-13: #3d3c3c;
+$c-14: #0d659d;
+$c-15: #1782c6;
+$c-16: #cbcbcb;
+$c-17: #919191;
 
 body {
     background: $c-1;
@@ -29,9 +38,87 @@ main {
 
 @import "components/header";
 @import "components/bli";
+@import "components/publicar";
+@import "components/publicacion";
+@import "components/bld";
 
 @media screen and (max-width: 575px) {
     header .menu {
         padding: 15px 15px 0 15px;
+    }
+    main .contenido-principal {
+        .publicacion .foto {
+            padding-right: 0;
+            a {
+                width: 40px;
+                height: 40px;
+            }
+        }
+        .publicar .foto {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    main {
+        .btn-menu {
+            display: block;
+            border: 1px solid $c-11;
+            padding: 5px 10px;
+            font-size: 14px;
+            background: linear-gradient(to bottom, $c-12, $c-2 100%);
+            color: $c-3;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-align: center;
+            &:hover {
+                text-decoration: none;
+                background: $c-14;
+            }
+        }
+        .bli {
+            width: 85%;
+            position: fixed;
+            z-index: 100;
+            left: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.85);
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            transform: translateX(-100%);
+            transition: all 0.3s ease;
+            overflow: scroll;
+            nav {
+                border-bottom: none;
+                a {
+                    padding: 20px;
+                    color: $c-3;
+                    &:hover {
+                        color: $c-13;
+                        background: $c-3;
+                    }
+                }
+            }
+            &.active {
+                transform: translateX(0%);
+            }
+        }
+        .fondo-enlace {
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 99;
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
     }
 }

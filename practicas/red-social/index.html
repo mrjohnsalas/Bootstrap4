@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <header>
         <div class="container">
@@ -41,7 +43,7 @@
     <main class="container">
         <div class="row">
             <!-- Barra Lateral Izquierda -->
-            <div class="col-md-3 bli">
+            <div class="col-md-3 bli" id="bli">
                 <nav>
                     <a href="#"><i class="icon-users"></i> Amigos</a>
                     <a href="#"><i class="icon-mail"></i> Mensajes privados</a>
@@ -53,11 +55,203 @@
                 </nav>
             </div>
 
+            <a href="#" class="fondo-enlace d-md-none" id="fondo-enlace"></a>
+
             <!-- Contenido principal -->
-            <div class="col"></div>
+            <div class="col contenido-principal">
+                <div class="publicar">
+                    <div class="row">
+                        <div class="col">
+                            <a href="#" class="btn-menu d-md-none d-flex justify-content-between" id="btn-menu">
+                                <span>Menu</span>
+                                <i class="icon-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-auto foto">
+                            <a href="#">
+                                <img src="img/persona2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <form action="">
+                                <textarea name="mensaje" placeholder="Publicar Mensaje"></textarea>
+                                <div class="contenedor-botones d-flex justify-content-between">
+                                    <div class="media">
+                                        <a href="#"><i class="icon-file-image"></i></a>
+                                        <a href="#"><i class="icon-play"></i></a>
+                                        <a href="#"><i class="icon-music"></i></a>
+                                    </div>
+                                    <div>
+                                        <button>Publicar</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post # 1 -->
+                <div class="publicacion">
+                    <div class="row">
+                        <div class="col-auto foto">
+                            <a href="#">
+                                <img src="img/persona5.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="post">
+                                <a href="#" class="nombre">Fernanda Salas</a>
+                                <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque quae
+                                    cumque ratione tempora alias at quos hic dolorem dolorum dignissimos iure esse,
+                                    voluptatum ex velit.</p>
+                                <div class="caja-botones d-flex justify-content-between align-items-center">
+                                    <button><i class="icon-thumbs-up"></i></button>
+                                    <p>15 <i class="icon-thumbs-up"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-10 offset-2">
+                            <div class="comentarios">
+                                <div class="row no-gutters comentario">
+                                    <div class="col-auto foto">
+                                        <a href="#"><img src="img/persona2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col">
+                                        <form action="">
+                                            <textarea name="" id="" placeholder="Comentario"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters comentario">
+                                    <div class="col-auto foto">
+                                        <a href="#"><img src="img/persona2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col">
+                                        <p class="respuesta">
+                                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod amet quas
+                                            corrupti rerum exercitationem? Iusto enim aperiam, quos ipsam ut nostrum
+                                            maxime sunt incidunt consequatur eius officiis accusamus iste hic!
+                                        </p>
+                                        <a href="#" class="me-gusta">Me gusta</a>
+                                    </div>
+                                </div>
+                                <div class="row no-gutters comentario">
+                                    <div class="col-auto foto">
+                                        <a href="#"><img src="img/persona5.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col">
+                                        <p class="respuesta">
+                                            Lorem ipsum dolor sit amet.
+                                        </p>
+                                        <a href="#" class="me-gusta">Me gusta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post # 2 -->
+                <div class="publicacion">
+                    <div class="row">
+                        <div class="col-auto foto">
+                            <a href="#">
+                                <img src="img/persona1.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="post">
+                                <a href="#" class="nombre">John Salas</a>
+                                <div class="imagen">
+                                    <img src="img/paisaje1.jpg" alt="">
+                                </div>
+                                <div class="caja-botones d-flex justify-content-between align-items-center">
+                                    <button><i class="icon-thumbs-up"></i></button>
+                                    <p>15 <i class="icon-thumbs-up"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-10 offset-2">
+                            <div class="comentarios">
+                                <div class="row no-gutters comentario">
+                                    <div class="col-auto foto">
+                                        <a href="#"><img src="img/persona2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col">
+                                        <form action="">
+                                            <textarea name="" id="" placeholder="Comentario"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Post # 3 -->
+                <div class="publicacion">
+                    <div class="row">
+                        <div class="col-auto foto">
+                            <a href="#">
+                                <img src="img/persona2.jpg" alt="">
+                            </a>
+                        </div>
+                        <div class="col">
+                            <div class="post">
+                                <a href="#" class="nombre">Kevin Salas</a>
+                                <div class="imagen">
+                                    <img src="img/paisaje2.jpg" alt="">
+                                </div>
+                                <div class="caja-botones d-flex justify-content-between align-items-center">
+                                    <button><i class="icon-thumbs-up"></i></button>
+                                    <p>15 <i class="icon-thumbs-up"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-10 offset-2">
+                            <div class="comentarios">
+                                <div class="row no-gutters comentario">
+                                    <div class="col-auto foto">
+                                        <a href="#"><img src="img/persona2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="col">
+                                        <form action="">
+                                            <textarea name="" id="" placeholder="Comentario"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- Barra Lateral Derecha -->
-            <div class="col"></div>
+            <div class="col-3 bld d-none d-lg-block">
+                <h3>Publicidad</h3>
+                <div class="ads">
+                    <a href="#"><img src="img/ad1.jpg" width="300" alt=""></a>
+                    <a href="#"><img src="img/ad2.jpg" width="300" alt=""></a>
+                    <a href="#"><img src="img/ad3.jpg" width="300" alt=""></a>
+                </div>
+                <footer>
+                    <a href="#">Publicidad</a>
+                    <a href="#">Condiciones</a>
+                    <a href="#">Privacidad</a>
+                    <p class="copyright">Red Social 2018</p>
+                </footer>
+            </div>
         </div>
     </main>
     <script src="js/jquery-3.3.1.min.js"></script>
@@ -66,4 +260,5 @@
     <script src="js/menu.js"></script>
     <script src="js/scripts.js"></script>
 </body>
+
 </html>

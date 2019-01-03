@@ -1,0 +1,95 @@
+main {
+    .publicacion {
+        margin-bottom: 40px;
+        .foto {
+            a {
+                display: inline-block;
+                width: 60px;
+                height: 60px;
+                overflow: hidden;
+                border-radius: 100px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+        .nombre {
+            font-family: $font-family-2;
+            font-size: 16px;
+            line-height: 16px;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+        .texto {
+            background: $c-3;
+            color: $c-13;
+            font-size: 14px;
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        .imagen {
+            padding: 15px;
+            background: $c-3;
+            margin-bottom: 15px;
+            img {
+                width: 100%;
+            }
+        }
+        .post {
+            .caja-botones {
+                margin-bottom: 20px;
+                button {
+                    background: $c-2;
+                    color: $c-3;
+                    cursor: pointer;
+                    padding: 10px 20px;
+                    display: inline-block;
+                    font-size: 18px;
+                    line-height: 18px;
+                    border-radius: 4px;
+                    border: none;
+                    &:hover {
+                        background: $c-14;
+                    }
+                }
+                p {
+                    margin-bottom: 0;
+                    color: $c-15;
+                }
+            }
+        }
+        .comentario {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-bottom: 1px solid $c-16;
+            .foto {
+                padding-left: 0;
+                margin-right: 15px;
+                a {
+                    display: inline-block;
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            form textarea {
+                width: 100%;
+                background: $c-3;
+                border: 1px solid $c-16;
+                color: $c-9;
+                padding: 8px;
+                min-height: 40px;
+                height: 40px;
+                min-width: 100%;
+                max-width: 100%;
+                font-size: 14px;
+            }
+            .respuesta {
+                font-size: 14px;
+                margin-bottom: 10px;
+            }
+            .me-gusta {
+                font-size: 14px;
+            }
+        }
+    }
+}
